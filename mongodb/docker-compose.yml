@@ -1,0 +1,16 @@
+mongodb:
+#  restart: always
+  image: "mongo:3.2"
+  container_name: mongdb
+  ports:
+    - 27017:27017
+  volumes:
+    - /Users/Johnny/dev/dockers/mongodb/data:/data/db
+  environment:
+    MONGO_INITDB_ROOT_USERNAME: admin
+    MONGO_INITDB_ROOT_PASSWORD: admin
+#  mem_limit: 128m
+
+  #  mongo-express:
+
+

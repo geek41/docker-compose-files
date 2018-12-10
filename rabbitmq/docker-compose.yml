@@ -1,0 +1,11 @@
+rabbitmq:
+  image: "rabbitmq:3.6.9-management"
+#  restart: always
+  ports:
+    - "5672:5672"
+    - "15672:15672"
+  environment:
+    - "RABBITMQ_DEFAULT_USER : root"
+    - "RABBITMQ_DEFAULT_PASS : 123"
+  mem_limit: 256m
+# 默认账号密码为 guest

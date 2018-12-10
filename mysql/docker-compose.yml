@@ -1,0 +1,11 @@
+mysql:
+  image: "mysql"
+  volumes:
+    - "$PWD/data:/var/lib/mysql"
+    - "$PWD/my.cnf:/etc/mysql/my.cnf"
+  ports:
+    - "3306:3306"
+  privileged: true
+  environment:
+    TIMEZONE: Asia/Shanghai
+    MYSQL_ROOT_PASSWORD: admin
