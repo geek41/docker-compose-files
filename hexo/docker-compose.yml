@@ -5,6 +5,6 @@ hexo:
   ports:
     - 4000:4000
   volumes:
-    - /Users/Johnny/dev/dockers/hexo/blog:/blog
+    - "$PWD/blog:/blog"
 #  command: hexo init
   mem_limit: 128m

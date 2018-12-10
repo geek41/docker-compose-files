@@ -1,11 +1,11 @@
 mongodb:
 #  restart: always
-  image: "mongo:3.2"
+  image: "mongo"
   container_name: mongdb
   ports:
     - 27017:27017
   volumes:
-    - /Users/Johnny/dev/dockers/mongodb/data:/data/db
+    - "$PWD/data:/data/db"
   environment:
     MONGO_INITDB_ROOT_USERNAME: admin
     MONGO_INITDB_ROOT_PASSWORD: admin
