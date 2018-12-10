@@ -6,5 +6,5 @@ hexo:
     - 4000:4000
   volumes:
     - "$PWD/blog:/blog"
-#  command: hexo init
+#  command: hexo init   ## If the container can not start up,plz use this command init first,then comment it.
   mem_limit: 128m
