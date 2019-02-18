@@ -1,10 +1,11 @@
 redis:
 #  restart: always
-  image: redis
+  image: "redis:3.2"
   container_name: redis
   ports:
-    - 6379:6379
+    - 16379:6379
   volumes:
+    - "$PWD/data:/data"
     - "$PWD/conf:/usr/local/etc/redis"
   command: redis-server /usr/local/etc/redis/redis.conf
   mem_limit: 128m

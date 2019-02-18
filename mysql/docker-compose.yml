@@ -1,12 +1,12 @@
 mysql:
-  image: "mysql"
+  image: "mysql:5.6"
   volumes:
     - "$PWD/data:/var/lib/mysql"
     - "$PWD/mysql-files:/var/lib/mysql-files"
     - "$PWD/conf:/etc/mysql"
   ports:
-    - "3306:3306"
+    - "8306:3306"
   privileged: true
   environment:
-    - "TIMEZONE: Asia/Shanghai"
-    - "MYSQL_ROOT_PASSWORD: admin"
+    TIMEZONE: Asia/Shanghai
+    MYSQL_ROOT_PASSWORD: admin
