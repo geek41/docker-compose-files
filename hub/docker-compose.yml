@@ -1,0 +1,10 @@
+version: '2' 
+services:
+  hue:
+    image: gethue/hue:latest
+    container_name: hue
+    volumes:
+      - ./conf/:/usr/share/hue/desktop/conf/
+    ports:
+      - 8888:8888
+
