@@ -1,0 +1,9 @@
+#version: '3.1'
+memcached1:
+  image: memcached
+  #restart: always
+  container_name: memcached_1
+  #domainname: 
+  ports:
+    - 11211:11211
+

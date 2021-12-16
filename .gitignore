@@ -1,0 +1,4 @@
+/mysql/data
+/zookeeper/data
+/zookeeper/datalog
+/zookeeper/logs
